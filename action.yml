@@ -1,0 +1,28 @@
+name: Update Docker Image Rancher v2 Deployment
+branding:
+  color: blue
+  icon: arrow-up-circle
+description: An action that helps deploy a new docker image for a deployment in Rancher v2.x
+inputs:
+  rancher_url:
+    description: Rancher instance URL
+    required: true
+  rancher_token:
+    description: Rancher API access token
+    required: true
+  cluster_id:
+    description: Rancher/Kubernetes Cluster ID
+    required: true
+  namespace:
+    description: Rancher/Kubernetes Namespace
+    required: true
+  deployment:
+    description: Deployment/Service within the Namespace
+    required: true
+  docker_image:
+    description: Docker image
+    required: true
+
+runs:
+  using: node12
+  main: main.js
