@@ -23,7 +23,7 @@ async function main() {
     headers,
     data: `[{"op": "replace", "path": "/spec/template/spec/containers/0/image", "value": "${dockerImage}"}]`,
   };
-  await axios(config).then(console.log).catch(console.error);
+  await axios(config)
 }
 
 function handleError(err) {
