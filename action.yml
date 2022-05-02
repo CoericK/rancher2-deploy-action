@@ -1,4 +1,5 @@
 name: Update Docker Image Rancher v2 Deployment
+author: Erick Arroyo
 branding:
   color: blue
   icon: arrow-up-circle
